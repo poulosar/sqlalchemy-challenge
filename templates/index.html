@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My API</title>
+</head>
+<body>
+    <header class="header">
+        <h2>Welcome to my API!</h2>
+    </header>
+    <article>
+        <h4>Available Routes:</h4>
+
+        <h5>Precipitation: /api/v1.0/precipitation</h5>
+            <p style="font-size:9px" >
+                &emsp;This will get all precipitation data from every station recording this type of data.
+            </p>
+        <h5>List of Stations: /api/v1.0/stations</h5>
+            <p style="font-size:9px" >
+                &emsp;This will get all data about stations collecting data. You should be able to find station_id, name, lat and long, and its elevation.
+            </p>            
+        <h5>Temperature for one year: /api/v1.0/tobs</h5>
+            <p style="font-size:9px" >
+                &emsp;This will get all data about temperature readings and a corresponding date.
+            </p> 
+        <h5>Temperature stats from the start date yyyy-mm-dd: /api/v1.0/yyyy-mm-dd</h5>
+            <p style="font-size:9px" >
+                &emsp;Put in a date and it will get you the average temperature, max temp, and min temp for that date across all stations.
+            </p> 
+        <h5>Temperature stat from start to end dates yyyy-mm-dd: /api/v1.0/yyyy-mm-dd/yyyy-mm-dd</h5>
+            <p style="font-size:9px" >
+                &emsp;Returns the same data as above but it is average out between the dates provided for start and end
+            </p> 
+    </article>
+
+
+</body>
+</html>
